@@ -9,7 +9,7 @@ public class Calculator {
     BinaryOperator<Integer> devide = (x, y) -> {
         if (y == 0) {
             System.out.println("На ноль делить нельзя!");
-            return 0;
+            return Integer.MAX_INT;
         }
         return x / y;
     };
